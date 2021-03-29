@@ -17,8 +17,8 @@
         </div>
 
         <div class="ticket-generator"> 
-            <div class="m"> <label for="generator-km-inpu">Km da percorrere</label> </div>
-            <input id="generator-km" type="number" >
+            <div class="m"> <label for="generator-km-input">Km da percorrere</label> </div>
+            <input id="generator-km-input" type="number" >
         </div>
 
         <div class="ticket-generator"> 
@@ -31,8 +31,8 @@
         </div>
 
         <div class="buttons">
-            <button>Genera</button>
-            <button>Annulla</button>
+            <button id="generate-button">Genera</button>
+            <button id="cancel-button">Annulla</button>
         </div>
     </div>
 
@@ -40,7 +40,11 @@
     <div class="second">
         <h3>DETTAGLIO PASSEGGERI</h3>
         <div class="ticket">
-            
+            <div>Nome passeggero: <span id="result-username"></span></div>
+            <div>offerta: <span id="result-offer"></span> </div>
+            <div>Carrozza: <span id="result-vagon"></span> </div>
+            <div>Codice CP: <span id="result-code"></span> </div>
+            <div>Costo biglietto: <span id="result-price"></span> </div>
         </div>
     </div>
     
