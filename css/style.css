@@ -17,26 +17,61 @@ h1 {
     color: white;
     padding: 20px 0;
 }
+/* first */
 
 .first {
     width: 80%;
-    height: 250px;
+    height: 180px;
     background-color: white;
+    color:indianred;
     margin: auto;
     text-align: center;
 }
 
-.ticket-generator {
-    display: inline-block;
-    
+.m {
+    padding-bottom: 10px;
 }
 
+.ticket-generator {
+    display: inline-block;
+    margin-right: 30px;
+    margin-top: 30px;
+}
+
+.ticket-generator input {
+    padding: 5px;
+    text-align: center;
+    border: 2px solid indianred; 
+    border-radius: 5px;
+}
+
+.ticket-generator select {
+    padding: 5px;
+    border-color: indianred;
+    border-radius: 5px;
+}
+
+.buttons {
+    padding-top: 30px;
+}
+
+.buttons button {
+    padding: 5px;
+    margin-right: 10px;
+    color: indianred;
+}
+/*second*/
 .second {
     width: 80%;
     height: 250px;
     background-color: white;
     margin: auto;    
     padding: 20px;
+    
+}
+
+.second span {
+    display: block;
 }
 
 .ticket {
@@ -44,5 +79,31 @@ h1 {
     height: 90%;
     border-top: 1px solid grey;
     border-bottom: 1px solid grey;
+    display: flex;
+    justify-content: space-between;
+}
+
+.name-p {
+    display: inline-block;
+    height: 100%;
+    width: 40%;
+    background-color: grey;
+    padding: 20px;
+}
+
+.name-p h2 {
+    padding-bottom: 20px;
+}
+
+.ticket h4 {
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.visible {
+    display: block;
+}
+.no-visible {
+    display: none;
 }
 

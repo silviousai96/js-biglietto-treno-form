@@ -3,6 +3,10 @@ var generateButton = document.getElementById('generate-button');
 generateButton.addEventListener('click', function() {
     //Operazioni da svolgere al click sul button genera:
     
+    //rendo visibile il biglietto generato
+    var visible = document.getElementById('phantom');
+    visible.className = 'visible';
+
     //Nome passeggero: prendo  nome e cognome del passeggero dall'input
     var userName = document.getElementById('generator-user-name').value
     
@@ -40,9 +44,23 @@ generateButton.addEventListener('click', function() {
     document.getElementById('result-offer').innerHTML = userOffer;
     document.getElementById('result-vagon').innerHTML = vagon;
     document.getElementById('result-code').innerHTML = codeCp;
-    document.getElementById('result-price').innerHTML = finalPrice;
+    document.getElementById('result-price').innerHTML = finalPrice.toFixed(2) + '€';
 
 });
+
+//Funzionalità bottone annulla
+var cancelButton = document.getElementById('cancel-button');
+cancelButton.addEventListener( 'click', function() {
+    //nascondo il biglietto generato
+    var visible = document.getElementById('phantom');
+    visible.className = 'no-visible';
+    //resetto i valori
+    document.getElementById('generator-user-name').value = '';
+    document.getElementById('generator-km-input').value = '';
+    document.getElementById('generator-age-input').value = 'maggiorenne';
+});
+
+
 
 
 //funzione per generare numeri random (min e max compresi)
